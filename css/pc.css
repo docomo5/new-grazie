@@ -3,9 +3,13 @@
 body{
     background: #FFFFFF;
     font-size: 18px;
-    /* height: 1400px; */
-}
-  
+  }
+
+  #login img{
+    width: 30px;
+    height: 30px;
+  }
+   
   /* 모바일 전용 콘텐츠 비표시 */
   .mobile-only {
     display: none;
@@ -14,6 +18,9 @@ body{
   .container {
     width: 1440px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     /* outline: 1px solid #ccc; */
   }
 
@@ -70,7 +77,7 @@ body{
     /* swiper slider */
 .swiper {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     /* background: #ccc; */
   }
   .swiper .swiper-slide.s1{
@@ -170,5 +177,48 @@ body{
     color: #BDAB15;
   }
 
+/* 컨텐츠 부분 */
 
+#contants{
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+#contants1> h2{
+  font-size: 36px;
+  margin-top: 114px;
+  margin-bottom: 110px;
+}
+#contants1 ul{
+  display: flex;
+  justify-content: space-between;
+}
+#what-new a{
+  color: #000;
+}
+#what-new p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+#contants2{
+  margin-bottom: 100px;
+}
+#contants2> h2{
+  font-size: 36px;
+  margin-top: 241px;
+  margin-bottom: 110px;
+}
+#contants2 ul{
+  display: flex;
+  justify-content: space-between;
+}
+#pick a{
+  color: #000;
+}
+#pick p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* 여기까지 컨텐츠 */
   
