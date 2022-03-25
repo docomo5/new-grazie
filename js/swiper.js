@@ -20,3 +20,27 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
+new Swiper('.swiper-container', {
+
+	slidesPerView : 4, 
+	spaceBetween : -4, 
+	slidesPerGroup : 4, 
+
+	
+	loopFillGroupWithBlank : true,
+
+	loop : true,
+  autoplay: {
+    delay: 1000
+  },
+  speed:8000,
+	pagination : { 
+		el : '.swiper-pagination',
+		clickable : true,
+	},
+	navigation : { 
+		nextEl : '.swiper-button-next', 
+		prevEl : '.swiper-button-prev', 
+	},
+});

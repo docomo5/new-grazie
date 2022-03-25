@@ -15,7 +15,7 @@ $(function(){
     
     
     // 사이트맵 닫기
-    $('.container').mouseleave(function(){
+    $('.sitemap-modal').mouseleave(function(){
       $('.sitemap-modal').removeClass('on');
     });
 
@@ -61,4 +61,32 @@ $(function(){
         $('.gallery2  img').eq(num2).addClass('on');
     })
   
+    //tap 버튼
+    $('#guide-bar-01 > a:first').click(function(){
+        $(this).addClass('on');
+        $('#win-now').removeClass('on');
+        $('#notice-event').addClass('on');
+    })
+
+    $(' #guide-bar-02> a:last').click(function(){
+        $(this).addClass('on');
+        $('#notice-event').removeClass('on');
+        $('#win-now').addClass('on');
+    })
+
+
+    
   })
+
+  function changeVisual(num) {
+    $('.tab-group a').removeClass('on');
+
+    // 이미지 액션
+    if(num == 1) {
+        $('.tab-group a').eq(num - 1).addClass('on');
+    } else if(num == 2) {
+        $('.tab-group a').eq(num - 1).addClass('on');
+    } else if(num == 3) {
+        $('.tab-group a').eq(num - 1).addClass('on');
+    }
+    };
