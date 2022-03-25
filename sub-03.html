@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grazie</title>
-  <link rel="shortcut icon" href="favicon.ico"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/default.css">
@@ -27,7 +26,7 @@
     </div>
     <!-- 사이트맵 레이어 팝업창 -->
     <div class="sitemap-modal pc-only">
-      <div class="blank"><img src="./images/blank.jpg">
+      <div class="blank"><img src="./images/blank.jpg" alt="blank">
       </div>
       <ul>
         <li>
@@ -68,32 +67,25 @@
         </li>
       </ul>
       <div class="blank2">
+      </div>
     </div>
-  
   </header>
-  
-<div id="main">
+ 
+<div class="main">
   <div id="top-img">
     <h2>Event</h2>
 </div>
 
-<div id="guide-bar">
-<div id="guide-bar-01">
-    <a href="#"><button id="event-btn" class="on">        
-        이벤트소식
-    </button>
-  </a>
-</div>
-<div id="guide-bar-02">
-  <a href="#">
-    <button id="win-btn">        
-      당첨자 현황
-    </button>
-  </a>
+
+<div class="tab-group">
+<a id="guide-bar-01" class="on" href="#" onclick="changeVisual(1);">이벤트 소식</a>
+<a id="guide-bar-02" href="#" onclick="changeVisual(2);">당첨자 현황</a>
 </div>
 
 </div>
-</div>
+
+
+
 
 
 
@@ -112,11 +104,11 @@
 
     <div id="notice">
       <table id="notice-table">
-        <thead>
+        <tr class="top-table">
           <th class="notice-num">번호</th>
           <th class="notice-title">제목</th>
           <th class="notice-date">작성일</th>
-        </thead>
+        </tr>
       <tr>
         <th class="notice-num">1</th>
         <td>그라찌에 로드샵 공모전 </td>
